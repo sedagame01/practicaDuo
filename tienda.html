@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Productos con Local Storage</title>
+    <link rel="stylesheet" href="tienda.css"> 
+</head>
+<body>
+
+    <header>
+        <h1> TIENDA DE PRODUCTOS</h1>
+    </header>
+
+    <main>
+        <section id="formularioEntrada">
+            <h2>Añadir producto</h2>
+            <form id="formProducto">
+                <input type="text" name="nombreProducto" id="nombreProducto" placeholder="NombreDelProducto" required>
+                <button type="submit" name="buscar">Agregar Producto</button>
+            </form>
+            <p id="mensaje-error"></p>
+        </section>
+        <hr>
+
+        <section id="listaProductos">
+            <h2>Productos disponibles</h2>
+            <table id="tabla-productos">
+                <thead >
+<!--                     <tr>
+                        <th >nombreProducto</th>
+                        <th>Cantidad</th>
+                        <TH>SUMAR</TH>
+                        <TH>RESTAR</TH>
+                    </tr> -->
+                </thead>
+                <tbody id="producto">
+                    
+                </tbody>
+            </table>
+            <p id="tabla-vacia" style="text-align: center; display: none;">La lista está vacía.</p>
+        </section>
+        <section id="tablaDinamica">
+            
+        </section>
+    </main>
+
+    <script src="tienda.js"></script> 
+</body>
+</html>
